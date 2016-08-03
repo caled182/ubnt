@@ -49,12 +49,12 @@ versao=`cat /etc/version | cut -d'.' -f1`
 cd /tmp
 rm -rf /tmp/X*.bin
 if [ "$versao" == "XM" ]; then
-        URL='http://www.ubnt.com/downloads/XN-fw-internal/v6.0/XM.v6.0-beta12-cs.29472.160729.1207.bin'
+        URL='http://dl.ubnt.com/XN-fw-internal/v6.0/XM.v6.0-beta12-cs.29472.160729.1207.bin'
         # URL='http://dl.ubnt.com/firmwares/XN-fw/v5.6.4/XM.v5.6.4.28924.160331.1253.bin'
         wget -c $URL
         ubntbox fwupdate.real -m /tmp/XM.v6.0-beta12-cs.29472.160729.1207.bin
 else
-        URL='http://www.ubnt.com/downloads/XN-fw-internal/v6.0/XW.v6.0-beta12-cs.29472.160729.1151.bin'
+        URL='http://dl.ubnt.com/XN-fw-internal/v6.0/XW.v6.0-beta12-cs.29472.160729.1151.bin'
         # URL='http://dl.ubnt.com/firmwares/XW-fw/v5.6.4/XW.v5.6.4.28924.160331.1238.bin'
         wget -c $URL
         ubntbox fwupdate.real -m /tmp/XW.v6.0-beta12-cs.29472.160729.1151.bin
